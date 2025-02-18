@@ -1,0 +1,30 @@
+{
+  "name": "gosafari",
+  "version": "1.0.0",
+  "description": "This is the go safare app",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adishdahal777/nodejs.git"
+  },
+  "keywords": [
+    "goSafari"
+  ],
+  "author": "Adish Dahal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adishdahal777/nodejs/issues"
+  },
+  "homepage": "https://github.com/adishdahal777/nodejs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1",
+    "nodemon": "^3.1.9"
+  }
+}
