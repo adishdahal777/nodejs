@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
+import { withAuth } from '@/utlis/auth';
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -64,4 +65,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default withAuth(Login, true);
