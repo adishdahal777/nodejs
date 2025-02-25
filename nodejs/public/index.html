@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Node.js Routes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-        <h1>Hello</h1>
+
+<body class="bg-gray-100 p-6">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-6">Node.js Routes</h1>
+
+        <!-- User Routes -->
+        <section class="bg-white p-4 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">User Management</h2>
+            <div class="space-y-3">
+                <div class="flex items-center justify-between p-3 bg-gray-100 rounded">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-blue-500 text-white text-sm font-bold px-2 py-1 rounded">GET</span>
+                        <code>/user/list</code>
+                    </div>
+                    <span>Fetch all users</span>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-100 rounded">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-green-500 text-white text-sm font-bold px-2 py-1 rounded">POST</span>
+                        <code>/user</code>
+                    </div>
+                    <span>Create a new user</span>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-100 rounded">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-red-500 text-white text-sm font-bold px-2 py-1 rounded">DELETE</span>
+                        <code>/user/:id/delete</code>
+                    </div>
+                    <span>Delete a user</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Authentication Routes -->
+        <section class="bg-white p-4 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Authentication</h2>
+            <div class="space-y-3">
+                <div class="flex items-center justify-between p-3 bg-gray-100 rounded">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-green-500 text-white text-sm font-bold px-2 py-1 rounded">POST</span>
+                        <code>/register</code>
+                    </div>
+                    <span>Register a new user</span>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-100 rounded">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-green-500 text-white text-sm font-bold px-2 py-1 rounded">POST</span>
+                        <code>/login</code>
+                    </div>
+                    <span>User login</span>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-100 rounded">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-blue-500 text-white text-sm font-bold px-2 py-1 rounded">GET</span>
+                        <code>/protected</code>
+                    </div>
+                    <span>Access protected route</span>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
