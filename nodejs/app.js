@@ -24,8 +24,8 @@ app.use(
     })
 );
 
-app.use(express.static("public"));
 app.use('/api', router);
+app.use(express.static("public"));
 
 
 
